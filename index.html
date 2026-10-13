@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#555856" />
+    <link rel="icon" type="image/png" href="./public/assets/jd-orb-favicon.png" />
+    <link rel="apple-touch-icon" href="./public/assets/jd-orb-favicon.png" />
+    <meta
+      name="description"
+      content="James Drew's Xbox 360-inspired portfolio for front-end development, analytics, AI, and game design."
+    />
+    <title>James Drew | Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient--one" aria-hidden="true"></div>
+    <div class="ambient ambient--two" aria-hidden="true"></div>
+
+    <div class="shell">
+      <header class="topbar">
+        <!--
+        <button class="brand" type="button" data-route="home" aria-label="Go home">
+          <span class="brand__orb">JD</span>
+          <span class="brand__wordmark">JAMES<span>DREW</span></span>
+        </button>
+        -->
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav__item is-active" data-route="home">home</button>
+          <button class="nav__item" data-route="projects">projects</button>
+          <button class="nav__item" data-route="about">about</button>
+          <button class="nav__item" data-route="experience">experience</button>
+        </nav>
+
+        <button class="player-card" type="button" data-route="about" aria-label="Open James Drew's profile">
+          <img src="./public/assets/james-drew.jpg" alt="James Drew" />
+        </button>
+      </header>
+
+      <main id="app" tabindex="-1"></main>
+
+      <footer class="controls" aria-label="Controls">
+        <span><b class="key key--a">A</b> Select</span>
+      </footer>
+    </div>
+
+    <button class="edge-page edge-page--prev" type="button" data-page-edge="prev" aria-label="Previous page">
+      <span class="edge-page__tiles" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="edge-page__label"></span>
+      <span class="edge-page__arrow" aria-hidden="true">&#8249;</span>
+    </button>
+    <button class="edge-page edge-page--next" type="button" data-page-edge="next" aria-label="Next page">
+      <span class="edge-page__arrow" aria-hidden="true">&#8250;</span>
+      <span class="edge-page__label"></span>
+      <span class="edge-page__tiles" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+
+    <div class="grain" aria-hidden="true"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
